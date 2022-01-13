@@ -1,0 +1,31 @@
+.general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+    .principal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-gap: 50px;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+
+@media screen and (max-width: 460px){
+    .principal{
+        div{
+            figure{
+                width: 100px !important;
+                height: 100px !important;
+            }
+        }
+    }
+}

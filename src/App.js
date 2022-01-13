@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Principal from './components/Principal';
+import Ine from './components/Ine';
+import Final from './components/Final';
+import './scss/base.scss';
+import ConfirmPhoto from './components/ConfirmPhoto';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Principal />} />
+        <Route path="/ine/" element={<Ine />} />
+        <Route path="/ine/confirmphoto" element={<ConfirmPhoto />} />
+      </Routes>
+      <Final 
+        message={"Revisa que los documentos sean claros y legibles"}
+      />
+    </>
   );
 }
 

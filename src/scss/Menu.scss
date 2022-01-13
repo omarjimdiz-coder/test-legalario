@@ -1,0 +1,43 @@
+@import "base";
+
+.menu{
+    display: flex;
+    background-color: $base-color;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+
+    >img{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    >h2{
+        font-size: 22px;
+        color: white;
+    }
+
+    >.submenu{
+        width: 5%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        img{
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 350px){
+    .menu{
+        padding: 0 39px 0 13px;
+    }
+}
+
+
+
